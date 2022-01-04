@@ -1,0 +1,44 @@
+
+html, body {
+  height: 100%;
+}
+*{
+  box-sizing:border-box;
+}
+/*
+
+ ==== design clock ==== 
+
+*/
+#clock {
+  background:rgb(0,0,0);
+  background:rgb(0,0,0,.3);
+  box-shadow:20px 20px 95px;
+  text-shadow:20px 20px 48px blue;
+  margin-left:auto;
+  margin-right:auto;
+  width:80%;
+  min-width:230px;
+  max-width:500px;
+  border-radius:20px;
+  font-family:"Pushster";
+  font-size:109px;
+  text-align: center;
+  position: relative;
+  top:45%;
+  font-size: 65px;
+  transition: 1s ease-in-out;
+}
+/*
+
+==== clock :hover desing =====
+
+*/
+#clock:hover{
+  color:#086;
+  box-shadow:25px 25px 125px;
+  transform:scale(1.2);
+  border:1px solid blue;
+  cursor:pointer;
+  
+}
