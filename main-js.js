@@ -17,7 +17,19 @@ function colorClock(){
   }
   
   var clockFace = hours + ':' + minutes + ':' + seconds;
-var hexColor = '#' + hours + minutes + seconds;  document.getElementById('clock').innerHTML = clockFace;
+var hexColor = '#' + hours + minutes + seconds;
+  
+    var times;
+  
+  if (hours >= 4 && hours <= 11){
+     times = 'Buna Dimineata!\n' + clockFace; 
+    document.getElementById('clock').innerHTML = times;
+  }
+   else if (hours >= 12 && hours <= 17){
+    times = 'Buna Ziua!\n' + clockFace;
+    document.getElementById('clock').innerHTML = times;
+  }else if(hours >= 18)
+  document.getElementById('clock').innerHTML = 'Buna Seara!\n' + clockFace;
 /*set time a run clock*/
 setTimeout(function() {
   colorClock();
